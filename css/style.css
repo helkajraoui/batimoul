@@ -75,26 +75,47 @@ a {
   height: 5px;
 }
 
-.ltrh-effect {
+.ltrh-effect,
+.tpbt-effect {
   position: relative;
   cursor: pointer;
 }
 
-.ltrh-effect::after {
+.ltrh-effect::after,
+.tpbt-effect::after {
 
   z-index: -1;
   content: "";
   position: absolute;
   left: 0;
   top: 0;
+
+  background-color: #333;
+
+}
+
+.ltrh-effect::after {
   width: 0;
   height: 100%;
-  background-color: #333;
   transition: width 0.5s;
+
 }
+
 
 .ltrh-effect:hover::after {
   width: 100%;
+
+}
+
+.tpbt-effect::after {
+  width: 100%;
+  height: 0;
+  transition: height 0.5s;
+  border-radius: 10px;
+}
+
+.tpbt-effect:hover::after {
+  height: 100%;
 
 }
 
@@ -528,14 +549,15 @@ a {
   width: 100%;
 }
 
-.service-bollets{
-  list-style:none;
+.service-bollets {
+  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: #4673ce; */
 }
-.service-bollets li{
+
+.service-bollets li {
   background-color: #e8e8e8;
   display: inline-block;
   width: 10px;
@@ -545,10 +567,187 @@ a {
   cursor: pointer;
 }
 
-.service-bollets li.active{
+.service-bollets li.active {
   background-color: #4673ce;
 }
 
-.service-bollets li:hover{
-    background-color: #4673ce;
+.service-bollets li:hover {
+  background-color: #4673ce;
+}
+
+
+/* Prices section */
+
+.numbers {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+  height: 300px;
+  background-size: cover;
+  /* to make the pic take the size as cover */
+  background-attachment: fixed;
+  /* to make the pic fixed */
+}
+
+/* to add pic as a background */
+.item-number-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+}
+
+.item-number {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-number i {
+  color: #6195ff;
+  margin-bottom: 15px;
+}
+
+.number-item-title {
+  color: #fff;
+  font-size: 30px;
+}
+
+.number-item-text {
+  color: #fff;
+}
+
+
+/* pricing section */
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.pricing-item {
+  padding: 20px 70px;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.pricing-item-text {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #999;
+
+}
+
+.pricing-item-permonth {
+  width: 130px;
+  height: 130px;
+  padding: 20px 0;
+  margin: 20px auto;
+  border: 2px solid #6195ff;
+  border-radius: 50%;
+}
+
+.pricing-item-permonth .dollor {
+  font-size: 50px;
+}
+
+.pricing-item-permonth .month {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.pricing-list {
+  list-style: none;
+}
+
+.pricing-list li {
+  line-height: 1.8;
+  color: #999;
+  transition: color 0.9s;
+}
+
+.pricing-item-purchase {
+  background: none;
+  border: 2px solid #6195ff;
+  display: block;
+  width: 140px;
+  padding: 10px;
+  margin: 15px auto 0 auto;
+  color: #6195ff;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, font-weight 0.5s, border-radius 0.5s;
+}
+
+.pricing-item:hover .pricing-item-text,
+.pricing-item:hover .pricing-item-permonth .month {
+  color: #fff;
+  font-weight: bold;
+}
+
+.pricing-item:hover .pricing-item-permonth .dollor,
+.pricing-item:hover .pricing-list li {
+  color: #fff;
+
+}
+
+
+.pricing-item:hover .pricing-item-purchase {
+  background-color: #6195ff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+
+}
+
+/* testimonial section */
+.testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background3.jpg);
+  height: 400 px;
+  background-size: cover;
+  /* to make the pic take the size as cover */
+  background-attachment: fixed;
+  /* to make the pic fixed */
+}
+
+.item-testimonial {
+  padding: 140px 0;
+}
+
+/* to flex the testimonial img and name and job make them good */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.testimonial-content-img img {
+  border-radius: 50%;
+}
+
+
+/* to flex the testimonial and make them good */
+.testimonial-flex {
+  display: flex;
+  gap: 10px;
+}
+
+
+.testimonial-name,
+.testimonial-discription {
+  color: #fff;
+
+}
+
+.testimonial-job {
+  color: #6195ff;
+}
+
+.testimonial-discription {
+  line-height: 1.6;
+  font-size: 17px;
 }
