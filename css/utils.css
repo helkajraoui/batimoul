@@ -1,0 +1,61 @@
+/* margin */
+
+.mg-bottom-20 {
+  margin-bottom: 1.25rem;
+}
+
+.mg-bottom-10 {
+  margin-bottom: 0.625rem;
+}
+
+.mg-bottom-5 {
+  margin-bottom: 0.313rem;
+}
+
+.mg-bottom-15 {
+  margin-bottom: 0.938rem;
+}
+
+/* text-transform */
+
+.text-transform-capitalize {
+  text-transform: capitalize;
+
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+
+}
+
+/* broder */
+.border-radius-10 {
+  border-radius: 0.625rem;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.border-1 {
+  border: 1px solid #e8e8e8;
+}
+
+.border-2 {
+  border: 1px solid #6195ff;
+}
+
+/* line-height
+
+.line-height-1.5 {
+  line-height: 1.5;
+}
+
+.line-height-1.6 {
+  line-height: 1.6;
+}
+
+.line-height-1.8{
+  line-height: 1.8;
+ 
+} */
