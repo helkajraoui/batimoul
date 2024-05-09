@@ -1,0 +1,162 @@
+/* 
+1- common styles
+2- general styles
+3- section 
+    3-0 header section
+    3-1 home section 
+    3-1 About section  
+    3-2 Portfolio section  
+    3-3 Service section  
+    3-4 Prices section  
+    3-5 team section  
+    3-6 blog page  
+    3-7 Contact section  
+    3-8 general css section
+    3-9 Footer section
+*/
+/* 2- general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.hover-opacity {
+  transition: opacity .5s;
+}
+
+.hover-opacity:hover {
+
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.py-y {
+  padding: 120px 0;
+
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header .section-title {
+  font-size: 35px;
+}
+
+.line {
+  display: block;
+  margin: 0 auto 70px auto;
+  background-color: var(--mainColor);
+  width: 60px;
+  height: 5px;
+}
+
+.ltrh-effect,
+.tpbt-effect {
+  position: relative;
+  cursor: pointer;
+}
+
+.ltrh-effect::after,
+.tpbt-effect::after {
+
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: #333;
+
+}
+
+.ltrh-effect::after {
+  width: 0;
+  height: 100%;
+  transition: width 0.5s;
+
+}
+
+
+.ltrh-effect:hover::after {
+  width: 100%;
+
+}
+
+.tpbt-effect::after {
+  width: 100%;
+  height: 0;
+  transition: height 0.5s;
+  border-radius: 10px;
+}
+
+.tpbt-effect:hover::after {
+  height: 100%;
+
+}
+
+
+
+/* colors */
+
+:root {
+  --mainColor: #6195FF;
+  --whitecolor: #fff;
+  --hoverBlue: #4673ce;
+  --greenHover: #45a049;
+  --borderColor: #e8e8e8;
+  --itemDiscription: #424242;
+  --portfolio: #f9f9f9;
+  --grayColor: #999;
+  --mainBlack: #1C1D21;
+}
+
+
+
+/* container */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

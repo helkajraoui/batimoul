@@ -1,0 +1,66 @@
+/* about section  */
+
+.about-section {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns with equal width */
+  /* grid-template-rows: 1fr; */
+  /* Two rows */
+  gap: 35px;
+  /* Gap between grid items */
+  /* height: 300px; */
+  /* Example height */
+}
+
+.section-header {
+  grid-column: 1 / span 3;
+  /* Spanning all three columns */
+}
+
+.about-item {
+  padding: 50px 20px;
+  text-align: center;
+
+  /* Example height */
+
+}
+
+.about-item:hover {
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-item .icon {
+  color: var(--mainColor);
+
+  transition: color 0.4s;
+}
+
+.about-item:hover .icon {
+  color: var(--hoverBlue);
+}
+
+.about-item-title {
+  transition: color 0.4s;
+}
+
+.about-item:hover .about-item-title,
+.about-item:hover .about-item-discription {
+  color: var(--whitecolor);
+}
+
+.about-item-discription {
+  line-height: 1.5;
+  color: var(--itemDiscription);
+  transition: color 0.4s;
+}
+
+.about-item-link {
+  color: var(--mainColor);
+  transition: color 0.4s;
+}
+
+.about-item:hover .about-item-link {
+  color: var(--hoverBlue);
+  font-weight: bold;
+}

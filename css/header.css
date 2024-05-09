@@ -1,0 +1,89 @@
+/* header */
+.header {
+  position: fixed;
+  /* we fixed the header on the img of the home */
+  width: 100%;
+  z-index: 3;
+  /* to put the header on the top of the img backgound */
+}
+
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head .logo img {
+  height: 2.5rem;
+  color: #ffffff);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.625rem;
+}
+
+
+
+.head .nav>li>a {
+  color: var(--whitecolor);
+  font-size: 1.063rem;
+  display: block;
+  padding: 20px 10px;
+}
+
+.head .nav>li>a::after,
+.head .nav>li>a.active::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--mainColor);
+}
+
+.head .nav>li>a::after {
+
+  width: 0;
+  transition: width 0.5s;
+}
+
+.head .nav>li>a:hover::after {
+  width: 100%;
+
+}
+
+.head .nav>li>a.active::after {
+  width: 100%;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* to make the blog drop to show us the blog post */
+.dropdown-menu {
+  position: absolute;
+  background-color: var(--mainColor);
+  width: 120px;
+  /* text-align: left; */
+  left: 12%;
+  top: 80%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5S, visibility 0.5s;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown .dropdown-menu>li>a {
+  display: block;
+  padding: 10px;
+  color: var(--whitecolor);
+}
+

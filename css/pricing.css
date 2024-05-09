@@ -1,0 +1,80 @@
+/* pricing section */
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.pricing-item {
+  padding: 20px 70px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.pricing-item:hover {
+  box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-item-text {
+  font-size: 17px;
+  color: var(--grayColor);
+
+}
+
+.pricing-item-permonth {
+  width: 130px;
+  height: 130px;
+  padding: 20px 0;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+.pricing-item-permonth .dollor {
+  font-size: 50px;
+}
+
+.pricing-item-permonth .month {
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+
+
+.pricing-list li {
+  line-height: 1.8;
+  color: var(--grayColor);
+  transition: color 0.9s;
+}
+
+.pricing-item-purchase {
+  background: none;
+  display: block;
+  width: 140px;
+  padding: 10px;
+  margin: 15px auto 0 auto;
+  color: var(--mainColor);
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, font-weight 0.5s, border-radius 0.5s;
+}
+
+.pricing-item:hover .pricing-item-text,
+.pricing-item:hover .pricing-item-permonth .month {
+  color: var(--whitecolor);
+  font-weight: bold;
+}
+
+.pricing-item:hover .pricing-item-permonth .dollor,
+.pricing-item:hover .pricing-list li {
+  color: var(--whitecolor);
+
+}
+
+
+.pricing-item:hover .pricing-item-purchase {
+  background-color: var(--mainColor);
+  color: var(--whitecolor);
+  font-weight: bold;
+  border-radius: 10px;
+
+}

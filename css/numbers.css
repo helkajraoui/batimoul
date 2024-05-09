@@ -1,0 +1,38 @@
+/* number section */
+
+.numbers {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background2.jpg);
+  height: 300px;
+  background-size: cover;
+  /* to make the pic take the size as cover */
+  background-attachment: fixed;
+  /* to make the pic fixed */
+}
+
+/* to add pic as a background */
+.item-number-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+}
+
+.item-number {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-number i {
+  color: var(--mainColor);
+}
+
+.number-item-title {
+  color: var(--whitecolor);
+  font-size: 30px;
+}
+
+.number-item-text {
+  color: var(--whitecolor);
+}

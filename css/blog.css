@@ -1,0 +1,53 @@
+/* blog section */
+.blog {
+  background-color: var(--portfolio);
+}
+
+.blog-content {
+  display: flex;
+  align-items: start;
+
+  gap: 2rem;
+}
+
+.blog-item {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.blog-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-media {
+  padding: 20px 20px 40px 20px;
+}
+
+.blog-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-list li {
+  font-size: 14px;
+}
+
+.blog-list li i {
+  color: var(--mainColor);
+}
+
+.blog-title {
+  font-size: 21px;
+
+}
+
+.blog-discription {
+  text-align: left;
+  line-height: 1.6;
+  color: var(--grayColor);
+}
+
+.blog-link {
+  color: var(--mainColor);
+}

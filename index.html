@@ -8,8 +8,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/blog.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/numbers.css">
+  <link rel="stylesheet" href="./css/offer.css">
+  <link rel="stylesheet" href="./css/Portfolio.css">
+  <link rel="stylesheet" href="./css/pricing.css">
+  <link rel="stylesheet" href="./css/service.css">
+  <link rel="stylesheet" href="./css/team.css">
+  <link rel="stylesheet" href="./css/testimonial.css">
   <link rel="stylesheet" href="css/utils.css">
-  <link rel="stylesheet" href="css/style.css">
+
 
   <title>Batimoul</title>
 </head>
@@ -19,22 +33,22 @@
     <div class="container">
       <div class="head">
         <div class="logo">
-          <img src="img/logo-alt.png" alt="logo image" draggable="false">
+          <img class="logo-img" src="img/logo-alt.png" alt="logo image" draggable="false">
         </div>
         <ul class="nav">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Price</a></li>
-          <li><a href="#">Team</a></li>
-          <li class="dropdown">
-            <a href="#">Blog</a>
-            <ul class="dropdown-menu">
+          <li><a href="#" class="show active">Home</a></li>
+          <li><a href="#" class="show">About</a></li>
+          <li><a href="#" class="show">Portfolio</a></li>
+          <li><a href="#" class="show">Service</a></li>
+          <li><a href="#" class="show">Price</a></li>
+          <li><a href="#" class="show">Team</a></li>
+          <li class=" dropdown ">
+            <a href="#" class="show" >Blog</a>
+            <ul class="dropdown-menu show">
               <li><a href="">Blog Post</a></li>
             </ul>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" class="show">Contact</a></li>
         </ul>
       </div> <!-- head -->
     </div> <!-- container -->
@@ -45,8 +59,8 @@
       <h1 class="title text-transform-uppercase"> We are creative agency</h1>
       <p class="home-discription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor accusamus modi ullam
         illum, laboriosam quam vel quo maxime debitis reiciendis corrupti tenetur!</p>
-      <button class="btn hover-opacity btn-start">Get Started</button>
-      <button class="btn hover-opacity btn-learn">Learn More</button>
+      <button class="btn border-0 hover-opacity btn-start">Get Started</button>
+      <button class="btn border-0 hover-opacity btn-learn">Learn More</button>
     </div> <!-- home-content -->
   </div> <!-- home -->
 
@@ -246,16 +260,20 @@
           Cupiditate distinctio
           inventore veritatis mollitia corporis et iure voluptas ullam velit error!</p><!-- service paraghraph -->
         <ul class="service-listed">
-          <li class="service-list mg-bottom-10"><i class="service-icons fa fa-check fa-fw"></i>Lorem ipsum dolor sit
+          <li class="service-list mg-bottom-10"><i class="service-icons border-2 fa fa-check fa-fw"></i>Lorem ipsum
+            dolor sit
             amet consectetur
             adipisicing elit.</li>
-          <li class="service-list mg-bottom-10"><i class="service-icons fa fa-check fa-fw"></i>Lorem ipsum dolor sit
+          <li class="service-list mg-bottom-10"><i class="service-icons border-2 fa fa-check fa-fw"></i>Lorem ipsum
+            dolor sit
             amet consectetur
             adipisicing elit.</li>
-          <li class="service-list mg-bottom-10"><i class="service-icons fa fa-check fa-fw"></i>Lorem ipsum dolor sit
+          <li class="service-list mg-bottom-10"><i class="service-icons border-2 fa fa-check fa-fw"></i>Lorem ipsum
+            dolor sit
             amet consectetur
             adipisicing elit.</li>
-          <li class="service-list mg-bottom-10"><i class="service-icons fa fa-check fa-fw"></i>Lorem ipsum dolor sit
+          <li class="service-list mg-bottom-10"><i class="service-icons border-2 fa fa-check fa-fw"></i>Lorem ipsum
+            dolor sit
             amet consectetur
             adipisicing elit.</li>
         </ul><!-- service item list -->
@@ -310,7 +328,7 @@
       <div class="pricing-plans">
         <div class="pricing-item border-1   border-radius-10 tpbt-effect">
           <span class="pricing-item-text text-transform-uppercase">basic plan</span>
-          <div class="pricing-item-permonth">
+          <div class="pricing-item-permonth border-2">
             <h3 class="dollor">$9</h3>
             <span class="month text-transform-uppercase">/ month</span>
           </div>
@@ -319,11 +337,11 @@
             <li>100 Email Account</li>
             <li>24/24 Support</li>
           </ul>
-          <button class="pricing-item-purchase">Purchase Now</button>
+          <button class="pricing-item-purchase border-2">Purchase Now</button>
         </div><!-- pricing item div 1 -->
         <div class="pricing-item border-1   border-radius-10 tpbt-effect">
           <span class="pricing-item-text text-transform-uppercase">basic plan</span>
-          <div class="pricing-item-permonth">
+          <div class="pricing-item-permonth border-2">
             <h3 class="dollor">$9</h3>
             <span class="month text-transform-uppercase">month</span>
           </div>
@@ -332,11 +350,11 @@
             <li>100 Email Account</li>
             <li>24/24 Support</li>
           </ul>
-          <button class="pricing-item-purchase">Purchase Now</button>
+          <button class="pricing-item-purchase border-2">Purchase Now</button>
         </div><!-- pricing item div 2 -->
         <div class="pricing-item border-1   border-radius-10 tpbt-effect">
           <span class="pricing-item-text text-transform-uppercase">basic plan</span>
-          <div class="pricing-item-permonth">
+          <div class="pricing-item-permonth border-2">
             <h3 class="dollor">$9</h3>
             <span class="month text-transform-uppercase">month</span>
           </div>
@@ -345,7 +363,7 @@
             <li>100 Email Account</li>
             <li>24/24 Support</li>
           </ul>
-          <button class="pricing-item-purchase">Purchase Now</button>
+          <button class="pricing-item-purchase border-2">Purchase Now</button>
         </div><!-- pricing item div 3 -->
       </div><!-- pricing plans div  -->
     </div>
@@ -582,7 +600,7 @@
             <textarea class="border-1" id="message" name="message" placeholder="Message" required></textarea>
           </div><!-- message div -->
           <div class="form-group mg-bottom-20 ">
-            <input type="submit" class="border-1" value="Send Message">
+            <input type="submit" class="border-0 " value="Send Message">
           </div><!-- submit div -->
         </form><!-- form div -->
       </div><!-- contact-container div -->
@@ -607,7 +625,8 @@
 
     </div><!-- contact div -->
   </footer><!-- footer -->
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html

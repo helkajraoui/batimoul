@@ -1,0 +1,50 @@
+/*    3-1 home section */
+.home {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background1.jpg);
+  /* to add an img as a back-ground and make it a little bit darker */
+  background-size: cover;
+  /*to make the img as a cover  */
+  position: relative;
+}
+
+.home-content {
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.home .title {
+  color: var(--whitecolor);
+  font-size: 3.5rem;
+}
+
+.home .home-discription {
+  margin: 20px 0;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: var(--whitecolor);
+}
+
+.home .btn {
+  min-width: 160px;
+  padding: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.home .btn-start {
+  margin-right: 10px;
+  background-color: var(--whitecolor);
+
+}
+
+.home .btn-learn {
+  background-color: var(--mainColor);
+  color: var(--whitecolor);
+}

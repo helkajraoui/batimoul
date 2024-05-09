@@ -1,0 +1,50 @@
+/* testimonial section */
+.testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background3.jpg);
+  height: 400 px;
+  background-size: cover;
+  /* to make the pic take the size as cover */
+  background-attachment: fixed;
+  /* to make the pic fixed */
+}
+
+.item-testimonial {
+  padding: 140px 0;
+}
+
+/* to flex the testimonial img and name and job make them good */
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+
+
+.testimonial-content-img img {
+  border-radius: 50%;
+}
+
+
+/* to flex the testimonial and make them good */
+.testimonial-flex {
+  display: flex;
+  gap: 10px;
+}
+
+
+.testimonial-name,
+.testimonial-discription {
+  color: var(--whitecolor);
+
+}
+
+.testimonial-job {
+  color: var(--mainColor);
+}
+
+.testimonial-discription {
+  line-height: 1.6;
+  font-size: 17px;
+}

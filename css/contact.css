@@ -1,0 +1,87 @@
+/* contact section */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.contact-info {
+  margin: 10px 0;
+  padding: 0 15px;
+  text-align: center;
+
+}
+
+.contact-info i {
+  font-size: 36px;
+  color: var(--mainColor);
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: var(--mainBlack);
+}
+
+.contact-info p {
+  line-height: 1.6;
+  color: var(--grayColor);
+}
+
+
+.contact-container {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  /* border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#name,
+.form-group input[type="email"],
+.form-group textarea {
+  width: 48%;
+
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="submit"],
+.form-group textarea {
+  padding: 15px;
+  border-radius: 7px;
+
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: var(--mainBlack);
+  outline: none;
+}
+
+.form-group input[type="submit"] {
+  width: 40%;
+  margin: 15px auto 0 auto;
+  background-color: var(--mainColor);
+  color: white;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: var(--greenHover);
+}
+
+.form-group textarea,
+.form-group .subject {
+  width: 100%;
+}

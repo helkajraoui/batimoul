@@ -1,0 +1,103 @@
+/* Portfolio section */
+.portfolio {
+  background-color: var(--portfolio);
+}
+
+/* portfolio section */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr; */
+  /* Gap between grid items */
+  /* height: 300px; */
+  /* Example height */
+
+}
+
+/* .portfolio-item{
+  width: 30%;
+} */
+.portfolio-item img {
+  width: 100%;
+}
+
+.portfolio-item {
+  position: relative;
+  padding: 20px;
+}
+
+.layer-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+/* to show the black div  */
+
+.portfolio-item:hover .layer-content {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+/* to make it visibile  */
+
+.flex-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+
+}
+
+.layer-content .category {
+  color: var(--mainColor);
+  position: relative;
+  top: 10px;
+  transition: top 0.5s;
+  transition-delay: 0.2s;
+}
+
+.layer-content-title {
+  position: relative;
+  font-size: 20px;
+  color: var(--whitecolor);
+  top: 10px;
+  transition: top 0.5s;
+  transition-delay: 0.3s;
+}
+
+.portfolio-item:hover .layer-content .layer-content-title,
+.portfolio-item:hover .layer-content .fonts a,
+.portfolio-item:hover .layer-content .category {
+  top: 0;
+}
+
+.fonts {
+  text-align: center;
+}
+
+.fonts a {
+  color: var(--whitecolor);
+  position: relative;
+  top: 10px;
+  transition: top 0.5s;
+  transition-delay: 0.3s;
+}
+
+.fonts a i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--mainColor);
+  line-height: 40px;
+}
